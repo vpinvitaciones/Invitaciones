@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://media.giphy.com/media/26BRNTv5mvbmnj2M0/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            width: 60%;
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-left: 30px;
+            animation: move 3s infinite alternate;
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        .main-image {
+            width: 100%;
+            max-width: 150px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 1.8rem; /* Tamaño de letra reducido */
+            color: #ff0000;
+            text-shadow: 2px 2px 5px black;
+        }
+        p {
+            font-size: 1rem; /* Tamaño de letra reducido */
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 16px; /* Botones más pequeños */
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem; /* Letra más pequeña en los botones */
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            width: 45%;
+            position: relative;
+        }
+        .button:hover {
+            background-color: #cc0000;
+        }
+        .button:active {
+            background-color: #28a745; /* Verde cuando el botón es presionado */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>¡Estás Invitado al Cumpleaños de Carlos Santiago!</h1>
+        <p>
+            🕸️ <strong>Fecha:</strong> Domingo 16 de marzo de 2025<br>
+            🕸️ <strong>Hora:</strong> 3:30 PM<br>
+            🕸️ <strong>Lugar:</strong> Blvd. San Juan Bosco 3172-int.2, Cañada del Refugio, 37358 León de los Aldama, Gto. Salón Kaboom
+        </p>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='/Asistencia'">
+                Confirmar Asistencia
+            </button>
+            
+            
+            <a class="button" href="https://www.google.com/maps?q=Blvd.+San+Juan+Bosco+3172-int.2,+Cañada+del+Refugio,+37358+León+de+los+Aldama,+Gto." target="_blank">
+                Ver mapa del lugar
+            </a>
+        </div>
+        <img src="https://giffiles.alphacoders.com/813/81364.gif" alt="Spiderman GIF" class="main-image">
+    </div>
+</body>
+</html>
