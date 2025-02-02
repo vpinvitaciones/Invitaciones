@@ -6,8 +6,8 @@ import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
    {path: 'inicio', component: InicioComponent },
+   { path: 'asistencia', component: AsistenciaComponent},
   {path: '', redirectTo: '/inicio', pathMatch: 'full' },
- { path: 'Asistencia', component: AsistenciaComponent},
 ];
 
 @NgModule({
