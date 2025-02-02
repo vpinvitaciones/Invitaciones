@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
-import path from 'path';
 
 import { InicioComponent } from './inicio/inicio.component';
 
@@ -12,7 +11,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })], // ✅ Agregar useHash
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
